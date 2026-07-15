@@ -22411,7 +22411,7 @@ async function exportPDF(){
 
     const pdfBlob = pdf.output('blob');
     const saved = await saveFilesMobileFriendly([
-      {blob:pdfBlob, name:'dengue_d506_form.pdf'}
+      {blob:pdfBlob, name:'Dengue_D506_form.pdf'}
     ], 'ไฟล์ PDF A4 แนวตั้ง จำนวน 3 หน้า');
     if(!saved){ status('ยังไม่ได้บันทึกไฟล์ PDF', false); return; }
     status('ส่งออก PDF 3 หน้าเรียบร้อย', true);
