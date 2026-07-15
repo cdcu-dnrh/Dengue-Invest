@@ -22059,7 +22059,7 @@ async function exportExcel(){
     const excelArray = XLSX.write(wb, {bookType:'xlsx', type:'array'});
     const excelBlob = new Blob([excelArray], {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
     const saved = await saveFilesMobileFriendly([
-      {blob:excelBlob, name:'dengue_d506_horizontal.xlsx'}
+      {blob:excelBlob, name:'Dengue_D506_horizontal.xlsx'}
     ], 'ไฟล์ Excel รายงานสอบสวนโรคไข้เลือดออก');
     if(!saved){ status('ยังไม่ได้บันทึกไฟล์ Excel', false); return; }
     status('ส่งออก Excel เรียบร้อย', true);
