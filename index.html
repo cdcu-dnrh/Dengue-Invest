@@ -769,7 +769,13 @@ function appSwal(options){
     <label class="col-3">ชั้นเรียน<input data-key="class_level" class="field"></label>
 
     <label class="col-3">โทรศัพท์ผู้ป่วย
-      <input data-key="phone" class="field">
+      <input 
+        data-key="phone" 
+        class="field"
+        type="tel"
+        maxlength="11"
+        placeholder="000-0000000"
+        inputmode="numeric">
     </label>
 
     <div class="divider-label">
